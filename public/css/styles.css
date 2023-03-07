@@ -24,18 +24,28 @@ h2{
 
 .cuerpo-texto{
     font-size: 12px;
+    display: none;
     }
 
 
 .precio{
     font-size: 18px;
+    width: 30%;
 }
 .descuento{
     font-size: 16px;
     color: rgb(12, 224, 5);
-}
+    margin: 18px ;
+    width: 70%;
+    }
 .descripcion{
     font-size: 16px;
+    display: none;
+}
+
+.precioDescuento{
+    display: flex;
+
 }
 
 .lista-opciones{
@@ -45,12 +55,13 @@ h2{
 .burger-menu{
    background-color: #1259c3;
    display: block;
-   max-width: 8vw;
+   max-width: 50px;
+   padding: 15px 0;
    color: white;
    margin: auto;
    border-radius: 8px;
    text-align: center;
-   font-size: 3vw;
+   font-size: 18px;
     }
 
 main{
@@ -68,8 +79,23 @@ footer{
     margin-bottom: 10px;
     color: #1259c3;
 }
+.logoEnvio{
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 10px;
+    left: 700px;
+    top:1365px;
+}
 article{
-    margin-bottom: 10px;
+    margin: 10px;
     text-align: left;
 }
 .caracteristicas{
@@ -78,18 +104,19 @@ article{
     padding: 15px;
 }
 
-@media(max-width: 361px){
+@media(min-width: 361px){
     .descripcion{
-        display: none;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: block;
     }
     .cuerpo-texto{
-        display: none;
-        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        display: block;
     }
 }
 
-@media(min-width: 769px){
+@media(min-width: 361px){
+    article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
     .burger-menu{
         display: none; 
     }
